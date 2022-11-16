@@ -1,0 +1,71 @@
+* , *::before , *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gainsboro;
+    overflow: hidden;
+}
+
+.Hands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+    position: sticky;
+    top: 0;
+
+}
+
+.hand{
+    font-size: 3.5rem;
+    background:none;
+    cursor: pointer;
+    border: none;
+
+}
+
+.Hands .hand:hover , .hand:focus{
+    transform: scale(1.3);
+    transition: 0.1s;
+}
+
+.scores{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content:center;
+    justify-items: center;
+    font-size: 1.5rem;
+    width: max(90%,400px);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 8vh;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.score{
+    font-weight:500;
+}
+
+.score > span{
+    font-size: 1.3rem;
+}
+
+
+.winner{
+    transform: scale(1.3);
+}
+
+.looser{
+    opacity: 0.6;
+}
+
+.result-selection{
+    margin-top: 2rem;
+}
+
